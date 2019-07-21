@@ -1,15 +1,15 @@
 {
-  "name": "function-plot",
-  "version": "1.19.1",
+  "name": "idyll-function-plot",
+  "version": "1.0.0",
   "description": "A simple 2d function plotter powered by d3",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mauriciopoppe/function-plot"
+    "url": "https://github.com/michaltakac/function-plot"
   },
-  "bugs": "https://github.com/mauriciopoppe/function-plot/issues",
+  "bugs": "https://github.com/michaltakac/function-plot/issues",
   "homepage": "http://mauriciopoppe.github.io/function-plot/",
-  "author": "Mauricio Poppe <mauricio.poppe@gmail.com>",
+  "author": "Michal Takac <takacmichal92@gmail.com>",
   "main": "lib/index.js",
   "scripts": {
     "browserify": "browserify index.js -o dist/function-plot.js --standalone functionPlot",
@@ -39,6 +39,7 @@
     "staticpath": "site"
   },
   "keywords": [
+    "idyll",
     "function-plot",
     "function",
     "plotter",

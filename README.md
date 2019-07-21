@@ -1,4 +1,8 @@
-# function-plot
+# idyll-function-plot
+
+Forked from [function-plot](https://github.com/mauriciopoppe/function-plot) by [mauriciopoppe](https://github.com/mauriciopoppe/). I had to patch the `window` stuff to support Idyll's SSR.
+
+---
 
 [![NPM][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
@@ -29,14 +33,33 @@ is evaluated again with the new bounds, result: infinite graphs!
 npm install d3@3 function-plot
 ```
 
-## Usage with browserify
+## Creating custom Idyll component with simple plot
 
 ```js
-window.d3 = require('d3');
-const functionPlot = require('function-plot');
-functionPlot({
-  // options below
-})
+const React = require("react");
+const D3Component = require("idyll-d3-component");
+const d3 = require("d3");
+const functionPlot = require("function-plot");
+
+class Graph extends D3Component {
+  initialize(node, props) {
+    const div = d3.select(node).append('div');
+    div.attr('id', `quadratic`)
+      .style('width', '100%')
+      .style('height', 'auto');
+
+    functionPlot({
+      target: "#quadratic",
+      data: [
+        {
+          fn: "x^2",
+        },
+      ],
+    });
+  }
+}
+
+module.exports = Graph;
 ```
 
 ## Example
