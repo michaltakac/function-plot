@@ -69,7 +69,7 @@ All the available options are described in the [`homepage`](http://mauriciopoppe
 ## API
 
 ```
-var functionPlot = require('function-plot');
+var functionPlot = require('idyll-function-plot');
 ```
 
 ### `instance = functionPlot(options)`
