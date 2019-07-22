@@ -30,7 +30,7 @@ is evaluated again with the new bounds, result: infinite graphs!
 ## Quickstart
 
 ```sh
-npm install d3@3 function-plot
+npm install d3@3 idyll-function-plot
 ```
 
 ## Creating custom Idyll component with simple plot
