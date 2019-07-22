@@ -39,7 +39,7 @@ npm install d3@3 function-plot
 const React = require("react");
 const D3Component = require("idyll-d3-component");
 const d3 = require("d3");
-const functionPlot = require("function-plot");
+const functionPlot = require("idyll-function-plot");
 
 class Graph extends D3Component {
   initialize(node, props) {
