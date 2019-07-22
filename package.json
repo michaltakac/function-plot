@@ -1,7 +1,7 @@
 {
   "name": "idyll-function-plot",
-  "version": "1.0.0",
-  "description": "A simple 2d function plotter powered by d3",
+  "version": "1.0.1",
+  "description": "A simple 2d function plotter powered by d3, made to work with Idyll",
   "license": "MIT",
   "repository": {
     "type": "git",
